@@ -99,3 +99,24 @@
 15-09-2023 09:00:29.100 [Gauge] [INFO] Gauge daemon initialized and listening on port: 49818
 15-09-2023 09:00:29.102 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
 15-09-2023 09:00:29.102 [Gauge] [DEBUG] Found 1 files
+15-09-2023 11:39:58.993 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+15-09-2023 11:39:58.997 [Gauge] [INFO] Initializing specs cache with 1 specs
+15-09-2023 11:39:58.997 [Gauge] [DEBUG] Adding specs from /Users/testinium/Downloads/OtmOdev/specs/Caseler.spec
+15-09-2023 11:39:58.997 [Gauge] [INFO] Initializing steps cache with 1 steps
+15-09-2023 11:39:58.998 [Gauge] [INFO] Gauge daemon initialized and listening on port: 50818
+15-09-2023 11:39:58.999 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
+15-09-2023 11:39:58.999 [Gauge] [DEBUG] Found 1 files
+15-09-2023 11:54:09.215 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+15-09-2023 11:54:09.216 [Gauge] [INFO] Initializing specs cache with 1 specs
+15-09-2023 11:54:09.216 [Gauge] [DEBUG] Adding specs from /Users/testinium/Downloads/OtmOdev/specs/Caseler.spec
+15-09-2023 11:54:09.216 [Gauge] [INFO] Initializing steps cache with 1 steps
+15-09-2023 11:54:09.216 [Gauge] [INFO] Gauge daemon initialized and listening on port: 51034
+15-09-2023 11:54:09.216 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
+15-09-2023 11:54:09.216 [Gauge] [DEBUG] Found 1 files
+15-09-2023 12:09:56.506 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+15-09-2023 12:09:56.508 [Gauge] [INFO] Initializing specs cache with 1 specs
+15-09-2023 12:09:56.508 [Gauge] [DEBUG] Adding specs from /Users/testinium/Downloads/OtmOdev/specs/Caseler.spec
+15-09-2023 12:09:56.508 [Gauge] [INFO] Initializing steps cache with 1 steps
+15-09-2023 12:09:56.508 [Gauge] [INFO] Gauge daemon initialized and listening on port: 51246
+15-09-2023 12:09:56.511 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
+15-09-2023 12:09:56.511 [Gauge] [DEBUG] Found 1 files

@@ -1,41 +1,54 @@
 package Driver;
 
-import com.thoughtworks.gauge.AfterStep;
-import com.thoughtworks.gauge.AfterSuite;
-import com.thoughtworks.gauge.BeforeStep;
-import com.thoughtworks.gauge.Step;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import io.cucumber.java.After;
+import io.cucumber.java.en.Given;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 
 public class BaseDriver {
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
-    protected static WebDriver webDriver;
+    protected static WebDriver driver;
+    public static Actions actions;
+    //protected Logger logger = LoggerFactory.getLogger(getClass());
+    DesiredCapabilities capabilities;
+    String browserName = System.getProperty("browserName");
+    String javaVersion = System.getProperty("java.version");
+    String selectPlatform = "win";
 
-    @Step("Setup Driver <browserName>")
-    public void initializeDriver(String driverName) {
-        webDriver = DriverFactory.getDriver(driverName);
+    @Given("Setup Driver \"(chrome|firefox|safari)\"$")
+    public void setUp(String browserNameLocale) {
+        logger.info("************************************  BeforeScenario  ************************************");
+        logger.info("Local cihazda " + selectPlatform + " ortamında " + browserNameLocale + " browserında test ayağa kalkacak");
+        logger.info("Java version: " + javaVersion);
+        if ("win".equalsIgnoreCase(selectPlatform)) {
+            driver = Drivers.getDriver(browserNameLocale).getLocale(capabilities);
+            driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
+        } else if ("mac".equalsIgnoreCase(selectPlatform)) {
+            driver = Drivers.getDriver(browserNameLocale).getLocale(capabilities);
+            driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
+        }
+        actions = new Actions(driver);
     }
 
-    @AfterStep
-    public void beforeSteps() throws InterruptedException {
-        Thread.sleep(1500);
 
-    }
-
-    @AfterSuite
+    @After
     public void closeDriver() {
         //webDriver.quit();
     }
 
+    public static WebDriver getDriver() {
+        return driver;
     }
+
+}
 
