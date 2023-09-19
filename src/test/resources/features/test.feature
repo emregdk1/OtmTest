@@ -5,5 +5,5 @@ Feature: Web Test Scenario
 
   Scenario: Test
     Given I wait for "2" seconds
-    And I go to "https://prepweb.flypgs.com/booking"
+    And I go to "https://webct.flypgs.com/"
     And I click the "Icon" element

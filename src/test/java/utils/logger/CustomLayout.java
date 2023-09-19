@@ -1,4 +1,4 @@
-package logger;
+package utils.logger;
 
 import org.apache.log4j.PatternLayout;
 import org.apache.log4j.spi.LoggingEvent;

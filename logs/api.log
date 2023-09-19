@@ -28,8 +28,8 @@
 15-09-2023 08:36:53.481 [Gauge] [INFO] Gauge daemon initialized and listening on port: 49566
 15-09-2023 08:36:53.482 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
 15-09-2023 08:36:53.482 [Gauge] [DEBUG] Found 1 files
-15-09-2023 08:36:58.799 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Setup Driver \"CHROME\""}
-15-09-2023 08:36:58.799 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Setup Driver {}"  parameterizedStepValue:"Setup Driver <CHROME>"  parameters:"CHROME"}}
+15-09-2023 08:36:58.799 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Setup driver \"CHROME\""}
+15-09-2023 08:36:58.799 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Setup driver {}"  parameterizedStepValue:"Setup driver <CHROME>"  parameters:"CHROME"}}
 15-09-2023 08:36:58.802 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Go to <url>"}
 15-09-2023 08:36:58.802 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Go to {}"  parameterizedStepValue:"Go to <url>"  parameters:"url"}}
 15-09-2023 08:36:58.802 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Focus on last tab"}
@@ -58,8 +58,8 @@
 15-09-2023 08:36:58.804 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Check if element {} exists in"  parameterizedStepValue:"Check if element <key> exists in"  parameters:"key"}}
 15-09-2023 08:36:58.804 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Element var mı kontrol et <key> in"}
 15-09-2023 08:36:58.804 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Element var mı kontrol et {} in"  parameterizedStepValue:"Element var mı kontrol et <key> in"  parameters:"key"}}
-15-09-2023 08:36:58.804 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Setup Driver <browserName>"}
-15-09-2023 08:36:58.804 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Setup Driver {}"  parameterizedStepValue:"Setup Driver <browserName>"  parameters:"browserName"}}
+15-09-2023 08:36:58.804 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Setup driver <browserName>"}
+15-09-2023 08:36:58.804 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Setup driver {}"  parameterizedStepValue:"Setup driver <browserName>"  parameters:"browserName"}}
 15-09-2023 08:36:58.806 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Go to \"https://www.arabam.com/\""}
 15-09-2023 08:36:58.806 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Go to {}"  parameterizedStepValue:"Go to <https://www.arabam.com/>"  parameters:"https://www.arabam.com/"}}
 15-09-2023 08:36:58.807 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"\"Giris_Yap_Butonu\" Elementine tıklanılır"}
@@ -120,3 +120,39 @@
 15-09-2023 12:09:56.508 [Gauge] [INFO] Gauge daemon initialized and listening on port: 51246
 15-09-2023 12:09:56.511 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
 15-09-2023 12:09:56.511 [Gauge] [DEBUG] Found 1 files
+15-09-2023 18:17:10.902 [Gauge] [CRITICAL] Killing Gauge daemon. Parent process with pid 453 has terminated.
+19-09-2023 13:43:28.992 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+19-09-2023 13:43:28.995 [Gauge] [INFO] Initializing specs cache with 1 specs
+19-09-2023 13:43:28.995 [Gauge] [DEBUG] Adding specs from /Users/testinium/Downloads/OtmOdev/specs/Caseler.spec
+19-09-2023 13:43:28.995 [Gauge] [INFO] Initializing steps cache with 1 steps
+19-09-2023 13:43:28.995 [Gauge] [INFO] Gauge daemon initialized and listening on port: 50731
+19-09-2023 13:43:28.995 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
+19-09-2023 13:43:28.996 [Gauge] [DEBUG] Found 1 files
+19-09-2023 14:09:15.060 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+19-09-2023 14:09:15.062 [Gauge] [INFO] Initializing specs cache with 1 specs
+19-09-2023 14:09:15.062 [Gauge] [DEBUG] Adding specs from /Users/testinium/Downloads/OtmOdev/specs/Caseler.spec
+19-09-2023 14:09:15.062 [Gauge] [INFO] Initializing steps cache with 1 steps
+19-09-2023 14:09:15.062 [Gauge] [INFO] Gauge daemon initialized and listening on port: 51026
+19-09-2023 14:09:15.063 [Gauge] [DEBUG] Watching directory: /Users/testinium/Downloads/OtmOdev/specs
+19-09-2023 14:09:15.063 [Gauge] [DEBUG] Found 1 files
+19-09-2023 14:10:47.515 [Gauge] [DEBUG] Spec file removed: /Users/testinium/Downloads/OtmOdev/specs/Caseler.spec
+19-09-2023 14:36:45.754 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+19-09-2023 14:36:45.754 [Gauge] [INFO] Initializing specs cache with 0 specs
+19-09-2023 14:36:45.754 [Gauge] [INFO] Initializing steps cache with 0 steps
+19-09-2023 14:36:45.754 [Gauge] [INFO] Gauge daemon initialized and listening on port: 52099
+19-09-2023 14:36:45.755 [Gauge] [ERROR] Unable to add directory /Users/testinium/Downloads/OtmOdev/specs to file watcher: lstat /Users/testinium/Downloads/OtmOdev/specs: no such file or directory
+19-09-2023 14:42:01.133 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+19-09-2023 14:42:01.133 [Gauge] [INFO] Initializing specs cache with 0 specs
+19-09-2023 14:42:01.133 [Gauge] [INFO] Initializing steps cache with 0 steps
+19-09-2023 14:42:01.133 [Gauge] [INFO] Gauge daemon initialized and listening on port: 52142
+19-09-2023 14:42:01.133 [Gauge] [ERROR] Unable to add directory /Users/testinium/Downloads/OtmOdev/specs to file watcher: lstat /Users/testinium/Downloads/OtmOdev/specs: no such file or directory
+19-09-2023 14:44:45.658 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+19-09-2023 14:44:45.658 [Gauge] [INFO] Initializing specs cache with 0 specs
+19-09-2023 14:44:45.658 [Gauge] [INFO] Initializing steps cache with 0 steps
+19-09-2023 14:44:45.658 [Gauge] [INFO] Gauge daemon initialized and listening on port: 52219
+19-09-2023 14:44:45.658 [Gauge] [ERROR] Unable to add directory /Users/testinium/Downloads/OtmOdev/specs to file watcher: lstat /Users/testinium/Downloads/OtmOdev/specs: no such file or directory
+19-09-2023 14:46:24.554 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+19-09-2023 14:46:24.554 [Gauge] [INFO] Initializing specs cache with 0 specs
+19-09-2023 14:46:24.554 [Gauge] [INFO] Initializing steps cache with 0 steps
+19-09-2023 14:46:24.554 [Gauge] [INFO] Gauge daemon initialized and listening on port: 52266
+19-09-2023 14:46:24.554 [Gauge] [ERROR] Unable to add directory /Users/testinium/Downloads/OtmOdev/specs to file watcher: lstat /Users/testinium/Downloads/OtmOdev/specs: no such file or directory

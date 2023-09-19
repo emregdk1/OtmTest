@@ -8,40 +8,40 @@ SLF4J: See also https://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"starting gRPC server..."}
 2023-08-19 14:51:23 INFO  .(Reflections.java:219) scan - Reflections took 1095 ms to scan 181 urls, producing 6244 keys and 37636 values
 {"logLevel":"debug","message":"Scanning packages for steps"}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.findElement' and 'StepImplementation.StepImplementation.findElement'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.findElement' and 'stepImplementation.stepImplementation.findElement'"}
 {"logLevel":"debug","message":"Found {} Elementini sayfada bul in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.selectElementAtIndex' and 'StepImplementation.StepImplementation.selectElementAtIndex'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.selectElementAtIndex' and 'stepImplementation.stepImplementation.selectElementAtIndex'"}
 {"logLevel":"debug","message":"Found Select {} element at {} index in in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.jsclick' and 'StepImplementation.StepImplementation.jsclick'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.jsclick' and 'stepImplementation.stepImplementation.jsclick'"}
 {"logLevel":"debug","message":"Found js ile tikla {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'Driver.BaseDriver.initializeDriver' and 'Driver.BaseDriver.initializeDriver'"}
-{"logLevel":"debug","message":"Found Setup Driver {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.checkIfUrlContainsText' and 'StepImplementation.StepImplementation.checkIfUrlContainsText'"}
+{"logLevel":"debug","message":"Comparing 'base.BaseTest.initializeDriver' and 'base.BaseTest.initializeDriver'"}
+{"logLevel":"debug","message":"Found Setup driver {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.checkIfUrlContainsText' and 'stepImplementation.stepImplementation.checkIfUrlContainsText'"}
 {"logLevel":"debug","message":"Found url {} textini içeriyor mu in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.waitBySeconds' and 'StepImplementation.StepImplementation.waitBySeconds'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.waitBySeconds' and 'stepImplementation.stepImplementation.waitBySeconds'"}
 {"logLevel":"debug","message":"Found {} saniye Bekle in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.getElementWithKeyIfExists' and 'StepImplementation.StepImplementation.getElementWithKeyIfExists'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.getElementWithKeyIfExists' and 'stepImplementation.stepImplementation.getElementWithKeyIfExists'"}
 {"logLevel":"debug","message":"Found Check if element {} exists in in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.getElementWithKeyIfExists' and 'StepImplementation.StepImplementation.getElementWithKeyIfExists'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.getElementWithKeyIfExists' and 'stepImplementation.stepImplementation.getElementWithKeyIfExists'"}
 {"logLevel":"debug","message":"Found Element var mı kontrol et {} in in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.chromeFocusLastTab' and 'StepImplementation.StepImplementation.chromeFocusLastTab'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.chromeFocusLastTab' and 'stepImplementation.stepImplementation.chromeFocusLastTab'"}
 {"logLevel":"debug","message":"Found Focus on last tab in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.chromeFocusLastTab' and 'StepImplementation.StepImplementation.chromeFocusLastTab'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.chromeFocusLastTab' and 'stepImplementation.stepImplementation.chromeFocusLastTab'"}
 {"logLevel":"debug","message":"Found Son sekmeye odaklan in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.ifElementExistsClick' and 'StepImplementation.StepImplementation.ifElementExistsClick'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.ifElementExistsClick' and 'stepImplementation.stepImplementation.ifElementExistsClick'"}
 {"logLevel":"debug","message":"Found {} Elementi görülürse tıklanılır in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.sendKeys' and 'StepImplementation.StepImplementation.sendKeys'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.sendKeys' and 'stepImplementation.stepImplementation.sendKeys'"}
 {"logLevel":"debug","message":"Found {} Elementine {} değerini yaz in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.GoUrl' and 'StepImplementation.StepImplementation.GoUrl'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.GoUrl' and 'stepImplementation.stepImplementation.GoUrl'"}
 {"logLevel":"debug","message":"Found Go to {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.clickElement' and 'StepImplementation.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.clickElement' and 'stepImplementation.stepImplementation.clickElement'"}
 {"logLevel":"debug","message":"Found {} Elementine tıklanılır in current project scope."}
-{"logLevel":"debug","message":"Comparing 'StepImplementation.StepImplementation.scrollToElement' and 'StepImplementation.StepImplementation.scrollToElement'"}
+{"logLevel":"debug","message":"Comparing 'stepImplementation.stepImplementation.scrollToElement' and 'stepImplementation.stepImplementation.scrollToElement'"}
 {"logLevel":"debug","message":"Found {} Elementine scroll et in current project scope."}
 {"logLevel":"debug","message":"Scanning packages for hooks"}
 {"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
 {"logLevel":"debug","message":"\tSon sekmeye odaklan : public void chromeFocusLastTab()"}
-{"logLevel":"debug","message":"\tSetup Driver {} : public void initializeDriver(String driverName)"}
+{"logLevel":"debug","message":"\tSetup driver {} : public void initializeDriver(String driverName)"}
 {"logLevel":"debug","message":"\t{} Elementine tıklanılır : public void clickElement(String elementName)"}
 {"logLevel":"debug","message":"\t{} saniye Bekle : public void waitBySeconds(int seconds) throws InterruptedException"}
 {"logLevel":"debug","message":"\tCheck if element {} exists in : public WebElement getElementWithKeyIfExists(String key) throws InterruptedException"}
@@ -58,35 +58,35 @@ SLF4J: See also https://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"started gRPC server on port 49850"}
 {"logLevel":"info","message":"Listening on port:49850"}
 2023-08-19 14:51:28 INFO  .(Reflections.java:219) scan - Reflections took 397 ms to scan 181 urls, producing 6157 keys and 27608 values
-{"logLevel":"debug","message":"Executing 'Setup Driver {}' using 'class Driver.BaseDriver.initializeDriver"}
+{"logLevel":"debug","message":"Executing 'Setup driver {}' using 'class base.BaseTest.initializeDriver"}
 2023-08-19 14:51:29 INFO —————————— .(WebDriverManager.java:1212) resolveDriverVersion - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
 2023-08-19 14:51:29 INFO —————————— .(WebDriverManager.java:1265) exportDriver - Exporting webdriver.chrome.driver as /Users/testinium/.cache/selenium/chromedriver/mac-arm64/116.0.5845.96/chromedriver
 Aug 19, 2023 2:51:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
-{"logLevel":"debug","message":"Executing 'Go to {}' using 'class StepImplementation.StepImplementation.GoUrl"}
-{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement"}
-2023-08-19 14:51:35 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement"}
-2023-08-19 14:51:39 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-{"logLevel":"debug","message":"Executing 'Focus on last tab' using 'class StepImplementation.StepImplementation.chromeFocusLastTab"}
-2023-08-19 14:51:40 INFO —— .(StepImplementation.java:34) chromeFocusLastTab - Entered.
-{"logLevel":"debug","message":"Executing '{} Elementine {} değerini yaz' using 'class StepImplementation.StepImplementation.sendKeys"}
-2023-08-19 14:51:42 INFO —— .(StepImplementation.java:60) sendKeys - Entered.
-2023-08-19 14:51:42 INFO ———— .(StepImplementation.java:47) waitBySeconds - Entered.
-{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement"}
-2023-08-19 14:51:45 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-{"logLevel":"debug","message":"Executing '{} Elementine {} değerini yaz' using 'class StepImplementation.StepImplementation.sendKeys"}
-2023-08-19 14:51:46 INFO —— .(StepImplementation.java:60) sendKeys - Entered.
-2023-08-19 14:51:46 INFO ———— .(StepImplementation.java:47) waitBySeconds - Entered.
-{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement"}
-2023-08-19 14:51:49 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-{"logLevel":"debug","message":"Executing '{} saniye Bekle' using 'class StepImplementation.StepImplementation.waitBySeconds"}
-2023-08-19 14:51:50 INFO —— .(StepImplementation.java:47) waitBySeconds - Entered.
-{"logLevel":"debug","message":"Executing 'Focus on last tab' using 'class StepImplementation.StepImplementation.chromeFocusLastTab"}
-2023-08-19 14:51:59 INFO —— .(StepImplementation.java:34) chromeFocusLastTab - Entered.
-{"logLevel":"debug","message":"Executing '{} Elementine {} değerini yaz' using 'class StepImplementation.StepImplementation.sendKeys"}
-2023-08-19 14:52:00 INFO —— .(StepImplementation.java:60) sendKeys - Entered.
-2023-08-19 14:52:00 INFO ———— .(StepImplementation.java:47) waitBySeconds - Entered.
+{"logLevel":"debug","message":"Executing 'Go to {}' using 'class stepImplementation.stepImplementation.GoUrl"}
+{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement"}
+2023-08-19 14:51:35 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement"}
+2023-08-19 14:51:39 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+{"logLevel":"debug","message":"Executing 'Focus on last tab' using 'class stepImplementation.stepImplementation.chromeFocusLastTab"}
+2023-08-19 14:51:40 INFO —— .(stepImplementation.java:34) chromeFocusLastTab - Entered.
+{"logLevel":"debug","message":"Executing '{} Elementine {} değerini yaz' using 'class stepImplementation.stepImplementation.sendKeys"}
+2023-08-19 14:51:42 INFO —— .(stepImplementation.java:60) sendKeys - Entered.
+2023-08-19 14:51:42 INFO ———— .(stepImplementation.java:47) waitBySeconds - Entered.
+{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement"}
+2023-08-19 14:51:45 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+{"logLevel":"debug","message":"Executing '{} Elementine {} değerini yaz' using 'class stepImplementation.stepImplementation.sendKeys"}
+2023-08-19 14:51:46 INFO —— .(stepImplementation.java:60) sendKeys - Entered.
+2023-08-19 14:51:46 INFO ———— .(stepImplementation.java:47) waitBySeconds - Entered.
+{"logLevel":"debug","message":"Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement"}
+2023-08-19 14:51:49 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+{"logLevel":"debug","message":"Executing '{} saniye Bekle' using 'class stepImplementation.stepImplementation.waitBySeconds"}
+2023-08-19 14:51:50 INFO —— .(stepImplementation.java:47) waitBySeconds - Entered.
+{"logLevel":"debug","message":"Executing 'Focus on last tab' using 'class stepImplementation.stepImplementation.chromeFocusLastTab"}
+2023-08-19 14:51:59 INFO —— .(stepImplementation.java:34) chromeFocusLastTab - Entered.
+{"logLevel":"debug","message":"Executing '{} Elementine {} değerini yaz' using 'class stepImplementation.stepImplementation.sendKeys"}
+2023-08-19 14:52:00 INFO —— .(stepImplementation.java:60) sendKeys - Entered.
+2023-08-19 14:52:00 INFO ———— .(stepImplementation.java:47) waitBySeconds - Entered.
 {"logLevel":"debug","message":"Killing Java runner..."}
 {"logLevel":"debug","message":"Stopping execution pool..."}
 {"logLevel":"debug","message":"Shutting down grpc server..."}

@@ -1,23 +1,22 @@
-package Driver;
+package base;
 
+import base.Drivers;
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
-public class BaseDriver {
+public class BaseTest {
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
     protected static WebDriver driver;
     public static Actions actions;
-    //protected Logger logger = LoggerFactory.getLogger(getClass());
+    //protected Logger utils.logger = LoggerFactory.getLogger(getClass());
     DesiredCapabilities capabilities;
     String browserName = System.getProperty("browserName");
     String javaVersion = System.getProperty("java.version");

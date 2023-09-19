@@ -1,26 +1,19 @@
-package StepImplementation;
+package stepImplementation;
 
-import Driver.BaseDriver;
+import base.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.ClassList;
 
-import java.sql.Driver;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 
-import static Constant.Constants.*;
+import static pages.Constants.*;
 import static org.junit.Assert.assertFalse;
 
 public class StepImplementation {
@@ -31,12 +24,13 @@ public class StepImplementation {
     Action action;
 
     public StepImplementation() {
-        this.webDriver = BaseDriver.getDriver();
+        this.webDriver = BaseTest.getDriver();
         ClassList.getInstance().put(this);
     }
 
     @And("I go to {string}")
     public void goToUrl(String url) {
+        logger.info("Entered. parameters; url{}:", url);
         webDriver.get(url);
     }
 //
@@ -136,13 +130,13 @@ public class StepImplementation {
     }
 //
 //    public void javaScriptClicker(WebElement element) {
-//        logger.info("Entered. Parameters; element: {}", element);
+//        utils.logger.info("Entered. Parameters; element: {}", element);
 //        JavascriptExecutor executor = (JavascriptExecutor) webDriver;
 //        executor.executeScript("arguments[0].click();", element);
 //    }
 //
 //    public void scrollIntoKeyByJs(WebElement webElement) {
-//        logger.info("Entered. Parameters; webElement: {}", webElement);
+//        utils.logger.info("Entered. Parameters; webElement: {}", webElement);
 //        ((JavascriptExecutor) webDriver).executeScript(
 //                "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})",
 //                webElement);

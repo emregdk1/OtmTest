@@ -46,40 +46,40 @@
 19-08-2023 13:59:14.416 [java] [DEBUG] starting gRPC server...
 19-08-2023 13:59:15.526 [java] [INFO] 2023-08-19 13:59:15 INFO  .(Reflections.java:219) scan - Reflections took 1174 ms to scan 181 urls, producing 6244 keys and 37637 values
 19-08-2023 13:59:15.805 [java] [DEBUG] Scanning packages for steps
-19-08-2023 13:59:15.814 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.findElement' and 'StepImplementation.StepImplementation.findElement'
+19-08-2023 13:59:15.814 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.findElement' and 'stepImplementation.stepImplementation.findElement'
 19-08-2023 13:59:15.815 [java] [DEBUG] Found {} Elementini sayfada bul in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.selectElementAtIndex' and 'StepImplementation.StepImplementation.selectElementAtIndex'
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.selectElementAtIndex' and 'stepImplementation.stepImplementation.selectElementAtIndex'
 19-08-2023 13:59:15.815 [java] [DEBUG] Found Select {} element at {} index in in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.jsclick' and 'StepImplementation.StepImplementation.jsclick'
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.jsclick' and 'stepImplementation.stepImplementation.jsclick'
 19-08-2023 13:59:15.815 [java] [DEBUG] Found js ile tikla {} in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'Driver.BaseDriver.initializeDriver' and 'Driver.BaseDriver.initializeDriver'
-19-08-2023 13:59:15.815 [java] [DEBUG] Found Setup Driver {} in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.checkIfUrlContainsText' and 'StepImplementation.StepImplementation.checkIfUrlContainsText'
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'base.BaseTest.initializeDriver' and 'base.BaseTest.initializeDriver'
+19-08-2023 13:59:15.815 [java] [DEBUG] Found Setup driver {} in current project scope.
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.checkIfUrlContainsText' and 'stepImplementation.stepImplementation.checkIfUrlContainsText'
 19-08-2023 13:59:15.815 [java] [DEBUG] Found url {} textini içeriyor mu in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.waitBySeconds' and 'StepImplementation.StepImplementation.waitBySeconds'
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.waitBySeconds' and 'stepImplementation.stepImplementation.waitBySeconds'
 19-08-2023 13:59:15.815 [java] [DEBUG] Found {} saniye Bekle in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.getElementWithKeyIfExists' and 'StepImplementation.StepImplementation.getElementWithKeyIfExists'
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.getElementWithKeyIfExists' and 'stepImplementation.stepImplementation.getElementWithKeyIfExists'
 19-08-2023 13:59:15.815 [java] [DEBUG] Found Check if element {} exists in in current project scope.
-19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.getElementWithKeyIfExists' and 'StepImplementation.StepImplementation.getElementWithKeyIfExists'
+19-08-2023 13:59:15.815 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.getElementWithKeyIfExists' and 'stepImplementation.stepImplementation.getElementWithKeyIfExists'
 19-08-2023 13:59:15.816 [java] [DEBUG] Found Element var mı kontrol et {} in in current project scope.
-19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.chromeFocusLastTab' and 'StepImplementation.StepImplementation.chromeFocusLastTab'
+19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.chromeFocusLastTab' and 'stepImplementation.stepImplementation.chromeFocusLastTab'
 19-08-2023 13:59:15.816 [java] [DEBUG] Found Focus on last tab in current project scope.
-19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.chromeFocusLastTab' and 'StepImplementation.StepImplementation.chromeFocusLastTab'
+19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.chromeFocusLastTab' and 'stepImplementation.stepImplementation.chromeFocusLastTab'
 19-08-2023 13:59:15.816 [java] [DEBUG] Found Son sekmeye odaklan in current project scope.
-19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.ifElementExistsClick' and 'StepImplementation.StepImplementation.ifElementExistsClick'
+19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.ifElementExistsClick' and 'stepImplementation.stepImplementation.ifElementExistsClick'
 19-08-2023 13:59:15.816 [java] [DEBUG] Found {} Elementi görülürse tıklanılır in current project scope.
-19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.sendKeys' and 'StepImplementation.StepImplementation.sendKeys'
+19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.sendKeys' and 'stepImplementation.stepImplementation.sendKeys'
 19-08-2023 13:59:15.816 [java] [DEBUG] Found {} Elementine {} değerini yaz in current project scope.
-19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.GoUrl' and 'StepImplementation.StepImplementation.GoUrl'
+19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.GoUrl' and 'stepImplementation.stepImplementation.GoUrl'
 19-08-2023 13:59:15.816 [java] [DEBUG] Found Go to {} in current project scope.
-19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.clickElement' and 'StepImplementation.StepImplementation.clickElement'
+19-08-2023 13:59:15.816 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.clickElement' and 'stepImplementation.stepImplementation.clickElement'
 19-08-2023 13:59:15.817 [java] [DEBUG] Found {} Elementine tıklanılır in current project scope.
-19-08-2023 13:59:15.817 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.scrollToElement' and 'StepImplementation.StepImplementation.scrollToElement'
+19-08-2023 13:59:15.817 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.scrollToElement' and 'stepImplementation.stepImplementation.scrollToElement'
 19-08-2023 13:59:15.817 [java] [DEBUG] Found {} Elementine scroll et in current project scope.
 19-08-2023 13:59:15.817 [java] [DEBUG] Scanning packages for hooks
 19-08-2023 13:59:15.820 [java] [DEBUG] Scanned steps (using static parsing + reflections): 
 19-08-2023 13:59:15.820 [java] [DEBUG] 	Son sekmeye odaklan : public void chromeFocusLastTab()
-19-08-2023 13:59:15.820 [java] [DEBUG] 	Setup Driver {} : public void initializeDriver(String driverName)
+19-08-2023 13:59:15.820 [java] [DEBUG] 	Setup driver {} : public void initializeDriver(String driverName)
 19-08-2023 13:59:15.820 [java] [DEBUG] 	{} Elementine tıklanılır : public void clickElement(String elementName)
 19-08-2023 13:59:15.820 [java] [DEBUG] 	{} saniye Bekle : public void waitBySeconds(int seconds) throws InterruptedException
 19-08-2023 13:59:15.820 [java] [DEBUG] 	Check if element {} exists in : public WebElement getElementWithKeyIfExists(String key) throws InterruptedException
@@ -141,40 +141,40 @@
 19-08-2023 14:51:22.918 [java] [DEBUG] starting gRPC server...
 19-08-2023 14:51:23.939 [java] [INFO] 2023-08-19 14:51:23 INFO  .(Reflections.java:219) scan - Reflections took 1095 ms to scan 181 urls, producing 6244 keys and 37636 values
 19-08-2023 14:51:24.177 [java] [DEBUG] Scanning packages for steps
-19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.findElement' and 'StepImplementation.StepImplementation.findElement'
+19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.findElement' and 'stepImplementation.stepImplementation.findElement'
 19-08-2023 14:51:24.181 [java] [DEBUG] Found {} Elementini sayfada bul in current project scope.
-19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.selectElementAtIndex' and 'StepImplementation.StepImplementation.selectElementAtIndex'
+19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.selectElementAtIndex' and 'stepImplementation.stepImplementation.selectElementAtIndex'
 19-08-2023 14:51:24.181 [java] [DEBUG] Found Select {} element at {} index in in current project scope.
-19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.jsclick' and 'StepImplementation.StepImplementation.jsclick'
+19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.jsclick' and 'stepImplementation.stepImplementation.jsclick'
 19-08-2023 14:51:24.181 [java] [DEBUG] Found js ile tikla {} in current project scope.
-19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'Driver.BaseDriver.initializeDriver' and 'Driver.BaseDriver.initializeDriver'
-19-08-2023 14:51:24.181 [java] [DEBUG] Found Setup Driver {} in current project scope.
-19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.checkIfUrlContainsText' and 'StepImplementation.StepImplementation.checkIfUrlContainsText'
+19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'base.BaseTest.initializeDriver' and 'base.BaseTest.initializeDriver'
+19-08-2023 14:51:24.181 [java] [DEBUG] Found Setup driver {} in current project scope.
+19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.checkIfUrlContainsText' and 'stepImplementation.stepImplementation.checkIfUrlContainsText'
 19-08-2023 14:51:24.181 [java] [DEBUG] Found url {} textini içeriyor mu in current project scope.
-19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.waitBySeconds' and 'StepImplementation.StepImplementation.waitBySeconds'
+19-08-2023 14:51:24.181 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.waitBySeconds' and 'stepImplementation.stepImplementation.waitBySeconds'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found {} saniye Bekle in current project scope.
-19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.getElementWithKeyIfExists' and 'StepImplementation.StepImplementation.getElementWithKeyIfExists'
+19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.getElementWithKeyIfExists' and 'stepImplementation.stepImplementation.getElementWithKeyIfExists'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found Check if element {} exists in in current project scope.
-19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.getElementWithKeyIfExists' and 'StepImplementation.StepImplementation.getElementWithKeyIfExists'
+19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.getElementWithKeyIfExists' and 'stepImplementation.stepImplementation.getElementWithKeyIfExists'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found Element var mı kontrol et {} in in current project scope.
-19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.chromeFocusLastTab' and 'StepImplementation.StepImplementation.chromeFocusLastTab'
+19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.chromeFocusLastTab' and 'stepImplementation.stepImplementation.chromeFocusLastTab'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found Focus on last tab in current project scope.
-19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.chromeFocusLastTab' and 'StepImplementation.StepImplementation.chromeFocusLastTab'
+19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.chromeFocusLastTab' and 'stepImplementation.stepImplementation.chromeFocusLastTab'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found Son sekmeye odaklan in current project scope.
-19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.ifElementExistsClick' and 'StepImplementation.StepImplementation.ifElementExistsClick'
+19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.ifElementExistsClick' and 'stepImplementation.stepImplementation.ifElementExistsClick'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found {} Elementi görülürse tıklanılır in current project scope.
-19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.sendKeys' and 'StepImplementation.StepImplementation.sendKeys'
+19-08-2023 14:51:24.182 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.sendKeys' and 'stepImplementation.stepImplementation.sendKeys'
 19-08-2023 14:51:24.182 [java] [DEBUG] Found {} Elementine {} değerini yaz in current project scope.
-19-08-2023 14:51:24.183 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.GoUrl' and 'StepImplementation.StepImplementation.GoUrl'
+19-08-2023 14:51:24.183 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.GoUrl' and 'stepImplementation.stepImplementation.GoUrl'
 19-08-2023 14:51:24.183 [java] [DEBUG] Found Go to {} in current project scope.
-19-08-2023 14:51:24.183 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.clickElement' and 'StepImplementation.StepImplementation.clickElement'
+19-08-2023 14:51:24.183 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.clickElement' and 'stepImplementation.stepImplementation.clickElement'
 19-08-2023 14:51:24.183 [java] [DEBUG] Found {} Elementine tıklanılır in current project scope.
-19-08-2023 14:51:24.183 [java] [DEBUG] Comparing 'StepImplementation.StepImplementation.scrollToElement' and 'StepImplementation.StepImplementation.scrollToElement'
+19-08-2023 14:51:24.183 [java] [DEBUG] Comparing 'stepImplementation.stepImplementation.scrollToElement' and 'stepImplementation.stepImplementation.scrollToElement'
 19-08-2023 14:51:24.183 [java] [DEBUG] Found {} Elementine scroll et in current project scope.
 19-08-2023 14:51:24.183 [java] [DEBUG] Scanning packages for hooks
 19-08-2023 14:51:24.189 [java] [DEBUG] Scanned steps (using static parsing + reflections): 
 19-08-2023 14:51:24.189 [java] [DEBUG] 	Son sekmeye odaklan : public void chromeFocusLastTab()
-19-08-2023 14:51:24.189 [java] [DEBUG] 	Setup Driver {} : public void initializeDriver(String driverName)
+19-08-2023 14:51:24.189 [java] [DEBUG] 	Setup driver {} : public void initializeDriver(String driverName)
 19-08-2023 14:51:24.189 [java] [DEBUG] 	{} Elementine tıklanılır : public void clickElement(String elementName)
 19-08-2023 14:51:24.189 [java] [DEBUG] 	{} saniye Bekle : public void waitBySeconds(int seconds) throws InterruptedException
 19-08-2023 14:51:24.189 [java] [DEBUG] 	Check if element {} exists in : public WebElement getElementWithKeyIfExists(String key) throws InterruptedException
@@ -199,35 +199,35 @@
 19-08-2023 14:51:28.600 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 49855
 19-08-2023 14:51:28.603 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 49855
 19-08-2023 14:51:28.603 [Gauge] [DEBUG] Initialising suite data store.
-19-08-2023 14:51:28.632 [java] [DEBUG] Executing 'Setup Driver {}' using 'class Driver.BaseDriver.initializeDriver
+19-08-2023 14:51:28.632 [java] [DEBUG] Executing 'Setup driver {}' using 'class base.BaseTest.initializeDriver
 19-08-2023 14:51:29.374 [java] [INFO] 2023-08-19 14:51:29 INFO —————————— .(WebDriverManager.java:1212) resolveDriverVersion - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
 19-08-2023 14:51:29.390 [java] [INFO] 2023-08-19 14:51:29 INFO —————————— .(WebDriverManager.java:1265) exportDriver - Exporting webdriver.chrome.driver as /Users/testinium/.cache/selenium/chromedriver/mac-arm64/116.0.5845.96/chromedriver
 19-08-2023 14:51:30.668 [java] [ERROR] Aug 19, 2023 2:51:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 19-08-2023 14:51:30.668 [java] [ERROR] WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
-19-08-2023 14:51:32.194 [java] [DEBUG] Executing 'Go to {}' using 'class StepImplementation.StepImplementation.GoUrl
-19-08-2023 14:51:35.975 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement
-19-08-2023 14:51:35.975 [java] [INFO] 2023-08-19 14:51:35 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-19-08-2023 14:51:39.083 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement
-19-08-2023 14:51:39.083 [java] [INFO] 2023-08-19 14:51:39 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-19-08-2023 14:51:40.820 [java] [DEBUG] Executing 'Focus on last tab' using 'class StepImplementation.StepImplementation.chromeFocusLastTab
-19-08-2023 14:51:40.820 [java] [INFO] 2023-08-19 14:51:40 INFO —— .(StepImplementation.java:34) chromeFocusLastTab - Entered.
-19-08-2023 14:51:42.350 [java] [DEBUG] Executing '{} Elementine {} değerini yaz' using 'class StepImplementation.StepImplementation.sendKeys
-19-08-2023 14:51:42.354 [java] [INFO] 2023-08-19 14:51:42 INFO —— .(StepImplementation.java:60) sendKeys - Entered.
-19-08-2023 14:51:42.354 [java] [INFO] 2023-08-19 14:51:42 INFO ———— .(StepImplementation.java:47) waitBySeconds - Entered.
-19-08-2023 14:51:45.013 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement
-19-08-2023 14:51:45.013 [java] [INFO] 2023-08-19 14:51:45 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-19-08-2023 14:51:46.756 [java] [DEBUG] Executing '{} Elementine {} değerini yaz' using 'class StepImplementation.StepImplementation.sendKeys
-19-08-2023 14:51:46.756 [java] [INFO] 2023-08-19 14:51:46 INFO —— .(StepImplementation.java:60) sendKeys - Entered.
-19-08-2023 14:51:46.756 [java] [INFO] 2023-08-19 14:51:46 INFO ———— .(StepImplementation.java:47) waitBySeconds - Entered.
-19-08-2023 14:51:49.325 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class StepImplementation.StepImplementation.clickElement
-19-08-2023 14:51:49.326 [java] [INFO] 2023-08-19 14:51:49 INFO —— .(StepImplementation.java:54) clickElement - Entered.
-19-08-2023 14:51:50.891 [java] [DEBUG] Executing '{} saniye Bekle' using 'class StepImplementation.StepImplementation.waitBySeconds
-19-08-2023 14:51:50.892 [java] [INFO] 2023-08-19 14:51:50 INFO —— .(StepImplementation.java:47) waitBySeconds - Entered.
-19-08-2023 14:51:59.414 [java] [DEBUG] Executing 'Focus on last tab' using 'class StepImplementation.StepImplementation.chromeFocusLastTab
-19-08-2023 14:51:59.414 [java] [INFO] 2023-08-19 14:51:59 INFO —— .(StepImplementation.java:34) chromeFocusLastTab - Entered.
-19-08-2023 14:52:00.941 [java] [DEBUG] Executing '{} Elementine {} değerini yaz' using 'class StepImplementation.StepImplementation.sendKeys
-19-08-2023 14:52:00.941 [java] [INFO] 2023-08-19 14:52:00 INFO —— .(StepImplementation.java:60) sendKeys - Entered.
-19-08-2023 14:52:00.941 [java] [INFO] 2023-08-19 14:52:00 INFO ———— .(StepImplementation.java:47) waitBySeconds - Entered.
+19-08-2023 14:51:32.194 [java] [DEBUG] Executing 'Go to {}' using 'class stepImplementation.stepImplementation.GoUrl
+19-08-2023 14:51:35.975 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement
+19-08-2023 14:51:35.975 [java] [INFO] 2023-08-19 14:51:35 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+19-08-2023 14:51:39.083 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement
+19-08-2023 14:51:39.083 [java] [INFO] 2023-08-19 14:51:39 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+19-08-2023 14:51:40.820 [java] [DEBUG] Executing 'Focus on last tab' using 'class stepImplementation.stepImplementation.chromeFocusLastTab
+19-08-2023 14:51:40.820 [java] [INFO] 2023-08-19 14:51:40 INFO —— .(stepImplementation.java:34) chromeFocusLastTab - Entered.
+19-08-2023 14:51:42.350 [java] [DEBUG] Executing '{} Elementine {} değerini yaz' using 'class stepImplementation.stepImplementation.sendKeys
+19-08-2023 14:51:42.354 [java] [INFO] 2023-08-19 14:51:42 INFO —— .(stepImplementation.java:60) sendKeys - Entered.
+19-08-2023 14:51:42.354 [java] [INFO] 2023-08-19 14:51:42 INFO ———— .(stepImplementation.java:47) waitBySeconds - Entered.
+19-08-2023 14:51:45.013 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement
+19-08-2023 14:51:45.013 [java] [INFO] 2023-08-19 14:51:45 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+19-08-2023 14:51:46.756 [java] [DEBUG] Executing '{} Elementine {} değerini yaz' using 'class stepImplementation.stepImplementation.sendKeys
+19-08-2023 14:51:46.756 [java] [INFO] 2023-08-19 14:51:46 INFO —— .(stepImplementation.java:60) sendKeys - Entered.
+19-08-2023 14:51:46.756 [java] [INFO] 2023-08-19 14:51:46 INFO ———— .(stepImplementation.java:47) waitBySeconds - Entered.
+19-08-2023 14:51:49.325 [java] [DEBUG] Executing '{} Elementine tıklanılır' using 'class stepImplementation.stepImplementation.clickElement
+19-08-2023 14:51:49.326 [java] [INFO] 2023-08-19 14:51:49 INFO —— .(stepImplementation.java:54) clickElement - Entered.
+19-08-2023 14:51:50.891 [java] [DEBUG] Executing '{} saniye Bekle' using 'class stepImplementation.stepImplementation.waitBySeconds
+19-08-2023 14:51:50.892 [java] [INFO] 2023-08-19 14:51:50 INFO —— .(stepImplementation.java:47) waitBySeconds - Entered.
+19-08-2023 14:51:59.414 [java] [DEBUG] Executing 'Focus on last tab' using 'class stepImplementation.stepImplementation.chromeFocusLastTab
+19-08-2023 14:51:59.414 [java] [INFO] 2023-08-19 14:51:59 INFO —— .(stepImplementation.java:34) chromeFocusLastTab - Entered.
+19-08-2023 14:52:00.941 [java] [DEBUG] Executing '{} Elementine {} değerini yaz' using 'class stepImplementation.stepImplementation.sendKeys
+19-08-2023 14:52:00.941 [java] [INFO] 2023-08-19 14:52:00 INFO —— .(stepImplementation.java:60) sendKeys - Entered.
+19-08-2023 14:52:00.941 [java] [INFO] 2023-08-19 14:52:00 INFO ———— .(stepImplementation.java:47) waitBySeconds - Entered.
 19-08-2023 14:52:03.964 [html-report] [DEBUG] Transformed SuiteResult to report structure
 19-08-2023 14:52:04.005 [html-report] [INFO] Successfully generated html-report to => /Users/testinium/Downloads/OtmOdev/reports/html-report/index.html
 19-08-2023 14:52:04.005 [html-report] [DEBUG] Done generating HTML report using theme from /Users/testinium/.gauge/plugins/html-report/4.1.2/themes/default
