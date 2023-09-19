@@ -12,6 +12,7 @@ config/database.yml
 
 # Log dosyaları
 log/
+out/
 
 # Cucumber projesi için eklenen özel girdiler
 /target/
