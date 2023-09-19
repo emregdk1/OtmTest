@@ -1,0 +1,20 @@
+# Derleme çıktıları
+*.class
+*.jar
+*.war
+
+# IDE özel dosyalar
+.idea/
+.vscode/
+
+# Veritabanı bağlantı dosyası
+config/database.yml
+
+# Log dosyaları
+log/
+
+# Cucumber projesi için eklenen özel girdiler
+/target/
+/web_driver
+/logs/
+logs/*
