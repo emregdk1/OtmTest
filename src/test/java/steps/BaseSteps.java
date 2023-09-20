@@ -21,6 +21,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Stream;
 
 public class BaseSteps {
     public WebDriver driver;
@@ -100,6 +101,31 @@ public class BaseSteps {
             hoverElement(findElement(by));
             clickElement(by);
             waitForPageToCompleteState();
+        }
+    }
+
+    public boolean clickIfClickable(String key, String pageName) {
+        WebElement element = findElement(key, pageName);
+        boolean isClickable = Stream.of(element)
+                .map(e -> isClickable(e))
+                .findFirst()
+                .orElse(false);
+        if (isClickable) {
+            element.click();
+            logger.info("Element with key '{}' is clickable and clicked on page '{}'", key, pageName);
+        } else {
+            logger.info("Element with key '{}' is not clickable on page '{}'", key, pageName);
+        }
+        return isClickable;
+    }
+
+    public boolean isClickable(WebElement element) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            return true;
+        } catch (TimeoutException e) {
+            return false;
         }
     }
 
@@ -183,6 +209,17 @@ public class BaseSteps {
         logger.info("Entered. Parameters; webElement: {}, text: {}", webElement, text);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].value=arguments[1]", webElement, text);
+    }
+
+    public String randomString(int stringLength) {
+        logger.info("Entered. Parameters; stringLength: {}", stringLength);
+        Random random = new Random();
+        char[] chars = "ABCDEFGHIJKLMNOPQRSTUWVXYZabcdefghijklmnopqrstuwvxyz0123456789".toCharArray();
+        String stringRandom = "";
+        for (int i = 0; i < stringLength; i++) {
+            stringRandom = stringRandom + chars[random.nextInt(chars.length)];
+        }
+        return stringRandom;
     }
 
     public void javaScriptClicker(WebDriver driver, WebElement element) {

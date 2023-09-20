@@ -18,6 +18,5 @@ public class HomePage {
         byMap.put("test3", "//a[@id='pt1:r1:1:r1:0:cb1']");
         byMap.put("test4", "//input[@id='pt1:r1:1:r1:1:s1:it2::content']");
         byMap.put("test5", "//button[@id='pt1:r1:1:r1:1:s1:btnSearchInd']");
-        byMap.put("ICON", "//div[@class='bolbol-header-logo']");
     }
 }

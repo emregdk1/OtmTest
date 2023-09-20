@@ -1,9 +1,10 @@
-package stepDefinitions.common;
+package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.asynchttpclient.util.Assertions;
 import org.junit.Assert;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriverException;
@@ -16,12 +17,13 @@ import utils.ClassList;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.Optional;
 import java.util.Random;
 
 import static constants.Constants.DEFAULT_MAX_ITERATION_COUNT;
 import static constants.Constants.DEFAULT_MILLISECOND_WAIT_AMOUNT;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.asynchttpclient.util.Assertions.*;
+import static org.junit.Assert.*;
 
 public class CommonStepDefinitions {
     private final BaseSteps baseSteps = ClassList.getInstance().get(BaseSteps.class);
@@ -36,7 +38,35 @@ public class CommonStepDefinitions {
         baseSteps.waitForPageToCompleteState();
     }
 
-    @And("User tries to click on the key {string} on the page name {string}")
+    @And("Check if current URL contains the value {string}")
+    public void checkURLContainsRepeat(String expectedURL) {
+        logger.info("Entered. Parameters; expectedURL: {}", expectedURL);
+        waitBySeconds(10);
+        int loopCount = 0;
+        String actualURL = baseSteps.getCurrentUrl();
+        while (loopCount < DEFAULT_MAX_ITERATION_COUNT) {
+
+            if (actualURL != null && actualURL.contains(expectedURL)) {
+                logger.info("Şuanki URL: " + expectedURL + " değerini içeriyor.");
+                return;
+            }
+            loopCount++;
+            waitByMilliSeconds(DEFAULT_MILLISECOND_WAIT_AMOUNT);
+        }
+    }
+
+    @And("Scroll to the element {string} by js in {string}")
+    public void scrollToElementWithJs(String key, String pageName) {
+        logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
+        WebElement element = baseSteps.findElement(key, pageName);
+        if (!baseSteps.isDisplayed(element)) {
+            baseSteps.waitForTheElement(key, pageName);
+        }
+        baseSteps.scrollByJs(element);
+        baseSteps.waitForPageToCompleteState();
+    }
+
+    @And("Click to element {string} in {string}")
     public void clickElement(String key, String pageName) {
         logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
         WebElement element = baseSteps.findElement(key, pageName);
@@ -44,6 +74,12 @@ public class CommonStepDefinitions {
         baseSteps.javaScriptClicker(element);
         baseSteps.waitForPageToCompleteState();
         logger.info(key + " clicked.");
+    }
+
+    @And("Double click to element {string} in {string}")
+    public void doubleClick(String key, String pageName) {
+        logger.info("Entered.");
+        baseSteps.doubleClick(baseSteps.findElement(key, pageName));
     }
 
     @And("User tries to click on the key {string} by javascript on the page name {string}")
@@ -56,6 +92,11 @@ public class CommonStepDefinitions {
         baseSteps.javaScriptClicker(element);
         logger.info("Clicked on the element: {}", element);
         baseSteps.waitForPageToCompleteState();
+    }
+
+    @And("Click if the element {string} on the page is clickable {string}")
+    public void elementClickable(String key, String pageName) {
+        baseSteps.clickIfClickable(key, pageName);
     }
 
     @And("Wait for the element {string} in {string}")
@@ -80,7 +121,7 @@ public class CommonStepDefinitions {
         logger.info(key + " clicked.");
     }
 
-    @And("User clicks on the element {string} if exist in the page name {string}")
+    @And("If exist click to element {string} in {string}")
     public void clickElementIfExist(String key, String pageName) {
         logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
         baseSteps.ifElementExistsClick(Page.createElement(pageName, key));
@@ -137,6 +178,12 @@ public class CommonStepDefinitions {
         WebElement element = baseSteps.findElement(key, pageName);
         baseSteps.writeToElementByJs(element, text);
         logger.info(key + " elementine " + text + " değeri js ile yazıldı.");
+    }
+
+    @And("Write random value to element {string} in {string}")
+    public void writeRandomValueToElement(String key, String pageName) {
+        logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
+        baseSteps.findElement(key, pageName).sendKeys(baseSteps.randomString(15));
     }
 
     @And("User writes a value {string} to the attribute {string} of element {string} in the page name {string}")
@@ -235,6 +282,42 @@ public class CommonStepDefinitions {
         logger.info("Text: {} has selected in the key: {} combo box.", text, key);
     }
 
+    @And("Select {string} element at {string} index in {string}")
+    public void selectElementAtIndex(String key, String index, String pageName) {
+        logger.info("Entered. Parameters: key={}, index={}, pageName={}", key, index, pageName);
+        try {
+            int x = Integer.parseInt(index) - 1;
+            Optional.ofNullable(baseSteps.findElements(key, pageName))
+                    .map(List::stream)
+                    .flatMap(stream -> stream.skip(x).findFirst())
+                    .ifPresentOrElse(baseSteps::javaScriptClicker,
+                            () -> logger.error("Index is out of bounds: {}", x));
+        } catch (NumberFormatException e) {
+            logger.error("Invalid index value: {}", index);
+        }
+    }
+
+    @And("Select random element {string} list in the {string}")
+    public void randomPick(String key, String pageName) {
+        logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
+        List<WebElement> elements = baseSteps.findElements(key, pageName);
+        Random random = new Random();
+        int index = random.nextInt(elements.size());
+        elements.get(index).click();
+        logger.info("clicked " + key + " element index is :" + index);
+    }
+
+    @And("Select random element {string} list {int} times in the {string}")
+    public void randomPickTimes(String key, int times, String pageName) {
+        logger.info("Entered. Parameters; key: {}, times: {}, pageName: {}", key, times, pageName);
+        for (int i = 0; i < times; i++) {
+            List<WebElement> elements = baseSteps.findElements(key, pageName);
+            Random random = new Random();
+            int index = random.nextInt(elements.size());
+            elements.get(index).click();
+        }
+    }
+
     @When("User selects {int} days later in the element {string} on the {string}")
     public void addASpecificNumberToTheCurrentDay(int number, String key, String pageName) {
         logger.info("Entered. Parameters; number:{}, key: {}, pageName: {}", number, key, pageName);
@@ -314,7 +397,7 @@ public class CommonStepDefinitions {
         assertTrue(text + " was available on the current page.", baseSteps.shouldSeeText(text));
     }
 
-    @Then("User checks whether element {string} exists or not in the page name {string}")
+    @Then("Check if element {string} exists in {string}")
     public WebElement getElementWithKeyIfExists(String key, String pageName) {
         logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
         WebElement webElement;
@@ -331,6 +414,21 @@ public class CommonStepDefinitions {
         }
         assertFalse(Boolean.parseBoolean("Element: '" + key + "' doesn't exist."));
         return null;
+    }
+
+    @And("Check if element {string} exists and log the current text in {string}")
+    public void checkIfElementExistLogCurrentText(String key, String pageName) {
+        logger.info("Entered. Parameters; key: {}, pageName: {}", key, pageName);
+        int loopCount = 0;
+        while (loopCount < DEFAULT_MAX_ITERATION_COUNT) {
+            if (baseSteps.findElements(key, pageName).size() > 0) {
+                logger.info("Key: {}, text: {}", key, baseSteps.findElement(key, pageName).getText());
+                return;
+            }
+            loopCount++;
+            waitByMilliSeconds(DEFAULT_MILLISECOND_WAIT_AMOUNT);
+        }
+        logger.warn(key + " was not visible on the " + pageName);
     }
 
 //    @Then("User should check that {string} element's text and {string} saved text are same at {string}")

@@ -5,7 +5,9 @@ Feature: Web Test Scenario
 
   Scenario: Test
     And Go to "https://webct.flypgs.com/" address
-    And Wait for the element "Icon" in "Home Page"
-    And User tries to click on the key "Icon" on the page name "Home Page"
-    
+    And Wait for the element "BUTTON" in "Home Page"
+    And Click to element "BUTTON" in "Home Page"
+    And Check if element "ICON" exists and log the current text in "Home Page"
+    And User
+
     
