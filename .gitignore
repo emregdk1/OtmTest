@@ -19,3 +19,4 @@ out/
 /web_driver
 /logs/
 logs/*
+env/
