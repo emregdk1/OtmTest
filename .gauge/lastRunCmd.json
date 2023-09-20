@@ -1,8 +1,0 @@
-[
-	"/usr/local/bin/gauge",
-	"run",
-	"--machine-readable",
-	"--hide-suggestion",
-	"--simple-console",
-	"/Users/testinium/Downloads/OtmOdev/specs/Caseler.spec:7"
-]
