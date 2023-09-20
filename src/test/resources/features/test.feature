@@ -4,6 +4,8 @@ Feature: Web Test Scenario
     Given Setup Driver "chrome"
 
   Scenario: Test
-    Given I wait for "2" seconds
-    And I go to "https://webct.flypgs.com/"
-    And I click the "Icon" element
+    And Go to "https://webct.flypgs.com/" address
+    And Wait for the element "Icon" in "Home Page"
+    And User tries to click on the key "Icon" on the page name "Home Page"
+    
+    

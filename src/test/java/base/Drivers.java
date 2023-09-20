@@ -47,14 +47,11 @@ public enum Drivers {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("profile.default_content_setting_values.notifications", 2);
-            ///setExperimentalOption("prefs", prefs);
             firefoxOptions.addArguments("--kiosk");
-            firefoxOptions.addArguments("--disable-notifications");
-            firefoxOptions.addArguments("--start-fullscreen");
             FirefoxProfile profile = new FirefoxProfile();
             firefoxOptions.setProfile(profile);
-            firefoxOptions.setCapability("marionette", true);
-            firefoxOptions.setCapability("prefs", prefs);
+            //firefoxOptions.setCapability("marionette", true);
+            //firefoxOptions.setCapability("prefs", prefs);
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver(firefoxOptions);
 
