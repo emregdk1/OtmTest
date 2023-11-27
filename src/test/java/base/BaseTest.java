@@ -1,8 +1,7 @@
 package base;
 
-import base.Drivers;
-import io.cucumber.java.After;
-import io.cucumber.java.en.Given;
+import com.thoughtworks.gauge.Step;
+import org.junit.jupiter.api.AfterAll;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -22,7 +21,7 @@ public class BaseTest {
     String javaVersion = System.getProperty("java.version");
     String selectPlatform = "win";
 
-    @Given("Setup Driver \"(chrome|firefox|safari)\"$")
+    @Step("Setup Driver <browserName>")
     public void setUp(String browserNameLocale) {
         logger.info("************************************  BeforeScenario  ************************************");
         logger.info("Local cihazda " + selectPlatform + " ortamında " + browserNameLocale + " browserında test ayağa kalkacak");
@@ -40,7 +39,7 @@ public class BaseTest {
     }
 
 
-    @After
+    @AfterAll
     public void closeDriver() {
         //webDriver.quit();
     }
