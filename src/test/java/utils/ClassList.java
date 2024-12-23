@@ -3,8 +3,8 @@ package utils;
 import java.util.HashMap;
 
 public class ClassList {
-    HashMap<Class, Object> map = new HashMap<>();
     private static ClassList instance;
+    HashMap<Class, Object> map = new HashMap<>();
 
     public static ClassList getInstance() {
         if (instance == null) {
@@ -19,9 +19,9 @@ public class ClassList {
     }
 
     public <T> T get(Class<T> c) {
-        if (map.get(c)==null){
+        if (map.get(c) == null) {
             try {
-                map.put(c,c.newInstance());
+                map.put(c, c.newInstance());
             } catch (InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
             }

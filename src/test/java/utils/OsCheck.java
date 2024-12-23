@@ -2,11 +2,7 @@ package utils;
 
 import java.util.Locale;
 
-public final class  OsCheck {
-
-    public enum OSType {
-        Windows, MacOS, Linux, Other
-    }
+public final class OsCheck {
 
     // cached result of OS detection
     private static OSType detectedOS;
@@ -31,5 +27,9 @@ public final class  OsCheck {
             detectedOS = OSType.Other;
         }
         return detectedOS;
+    }
+
+    public enum OSType {
+        Windows, MacOS, Linux, Other
     }
 }

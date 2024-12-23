@@ -1,73 +1,92 @@
 package base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import utils.ReadProperties;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ResourceBundle;
 
 public enum Drivers {
     CHROME {
         @Override
-        public RemoteWebDriver getLocale(DesiredCapabilities capabilities) {
+        public WebDriver getDriver() {
             ChromeOptions chromeOptions = new ChromeOptions();
-            Map<String, String> prefs = new HashMap<>();
-            //prefs.put("profile.default_content_setting_values.notifications", 2);
             chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-            //chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking", "enable-automation"));
-            // chromeOptions.addArguments("--start-fullscreen");
-            // chromeOptions.addArguments("start-maximized");
-            //chromeOptions.addArguments("-AppleLanguages","(tr)");
-            chromeOptions.addArguments("--lang=tr");
-            chromeOptions.addArguments("--disable-popup-blocking", "disable-automation", "--disable-blink-features", "--disable-blink-features=AutomationControlled"
-                    , "--disable-gpu", "--no-sandbox", "disable-infobars", "disable-plugins", "ignore-certificate-errors",
-                    "disable-translate", "disable-extensions", "--disable-notifications", "--remote-allow-origins=*");
-            Map<String, Object> parameters = new HashMap<>();
-            parameters.put("credentials_enable_service", false);
-            parameters.put("password_manager_enabled", false);
-            chromeOptions.setExperimentalOption("prefs", parameters);
-            chromeOptions.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-            //System.setProperty("webdriver.chrome.driver", "Web_Driver/chromedriver");
-            //chromeOptions.merge(capabilities);
-            WebDriverManager.chromedriver().setup();
+            chromeOptions.addArguments("--lang=tr",
+                    "--disable-popup-blocking",
+                    "--disable-blink-features=AutomationControlled",
+                    "--disable-gpu",
+                    "--no-sandbox",
+                    "--disable-infobars",
+                    "--ignore-certificate-errors",
+                    "--disable-translate",
+                    "--disable-extensions",
+                    "--disable-notifications",
+                    "--remote-allow-origins=*");
+            Map<String, Object> prefs = new HashMap<>();
+            prefs.put("credentials_enable_service", false);
+            prefs.put("password_manager_enabled", false);
+            chromeOptions.setExperimentalOption("prefs", prefs);
             return new ChromeDriver(chromeOptions);
         }
-
     },
-    FIREFOX {
+    ANDROID {
         @Override
-        public RemoteWebDriver getLocale(DesiredCapabilities capabilities) {
-            FirefoxOptions firefoxOptions = new FirefoxOptions();
-            Map<String, Object> prefs = new HashMap<>();
-            prefs.put("profile.default_content_setting_values.notifications", 2);
-            firefoxOptions.addArguments("--kiosk");
-            FirefoxProfile profile = new FirefoxProfile();
-            firefoxOptions.setProfile(profile);
-            //firefoxOptions.setCapability("marionette", true);
-            //firefoxOptions.setCapability("prefs", prefs);
-            WebDriverManager.firefoxdriver().setup();
-            return new FirefoxDriver(firefoxOptions);
+        public WebDriver getDriver() {
+            throw new UnsupportedOperationException("Use getNativeDriver() for Android");
+        }
 
+        @Override
+        public AppiumDriver getNativeDriver() {
+            ResourceBundle AppConfiguration = ReadProperties.readProp("AppConfiguration.properties");
+            String URL = AppConfiguration.getString("URL");
+            String appPackage = AppConfiguration.getString("appPackage");
+            String appActivity = AppConfiguration.getString("appActivity");
+            String androidUDID = AppConfiguration.getString("androidUDID");
+            UiAutomator2Options options = new UiAutomator2Options();
+            options
+                    .setPlatformName("Android")
+                    .setAppPackage(appPackage)
+                    .setAppActivity(appActivity)
+                    .setNoReset(false)
+                    .setDeviceName(androidUDID)
+                    .setNewCommandTimeout(Duration.ofSeconds(60000))
+                    .eventTimings()
+                    .setCapability("disableWindowAnimation", true);
+            options.setCapability("autoAcceptAlerts", true);
+            options.setCapability("unicodeKeyboard", false);
+            options.setCapability("autoAcceptAlerts", true);
+            options.setCapability("resetKeyboard", false);
+
+            try {
+                return new AppiumDriver(new URL(URL), options);
+            } catch (MalformedURLException e) {
+                throw new RuntimeException("Failed to initialize Android driver", e);
+            }
         }
     };
 
-    public RemoteWebDriver getLocale(DesiredCapabilities capabilities) {
-        return getLocale(capabilities);
-    }
-
-    public static Drivers getDriver(String driverName) {
-        for (Drivers drivers : Drivers.values()) {
-            if (drivers.toString().equalsIgnoreCase(driverName)) {
-                return drivers;
+    public static Drivers getDriverType(String driverName) {
+        for (Drivers driver : Drivers.values()) {
+            if (driver.toString().equalsIgnoreCase(driverName)) {
+                return driver;
             }
         }
-        throw new RuntimeException();
+        throw new IllegalArgumentException("Invalid driver type provided: " + driverName);
+    }
+
+    public abstract WebDriver getDriver();
+
+    public AppiumDriver getNativeDriver() {
+        throw new UnsupportedOperationException("This driver does not support native Android capabilities.");
     }
 }

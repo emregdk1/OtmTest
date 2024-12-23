@@ -1,7 +1,5 @@
 package utils;
 
-import utils.OsCheck;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
